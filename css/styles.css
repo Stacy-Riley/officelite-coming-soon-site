@@ -21,6 +21,7 @@ body {
 }
 
 .max-width-wrapper {
+  background-color: #F2F2F2;
   min-height: 100%; 
   max-width: 1440px;
   /* Overflow: hidden hides the excess portions of the decorative elements so there isn't a 
@@ -39,9 +40,6 @@ img {
 }
 /**************************************************/
 /* Header Section - Mobile First */
-/**************************************************/
-/**************************************************/
-/*  - Mobile */
 /**************************************************/
 .header-images-wrapper {
   position: relative;
@@ -118,10 +116,112 @@ img {
 /**************************************************/
 /* Card Section - Mobile */
 /**************************************************/
-/* Start with the card-container position absolute
-max-width wrapper position relative.  We need to allow
-the footer background color to rise high behind the
-card-container to follow the design comp */
+/* This code is to allow for footer background color to extend
+up behind this section of code */
+main {
+  position: relative;
+  z-index: 1;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: 100px;
+}
+
+.card {
+  border-radius: 13px;
+  width: 327px;
+  height: 508px;
+  margin: 0;
+  text-align: center;
+}
+
+.card-basic {
+  background-color: #ffffff; 
+}
+
+.card-ultimate {
+  background-color: #ffffff;
+}
+
+.card-pro {
+  position: relative;
+  background-color: #5175FF;
+  color: rgba(255, 255, 255, 1); 
+  overflow: hidden;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.card-pro figure {
+  position: absolute;
+  width: 880px;
+  bottom: 7px;
+  left: -275px;
+  
+}
+.card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 40px;
+}
+
+.cost {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.num-users {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 8px;
+}
+
+.addl-info {
+  color: rgba(116, 123, 149, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.addl-info-pro {
+  color: rgba(255, 255, 255, 1);
+  
+}
+.addl-info-first {
+  margin-top: 56px;
+}
+
+.try-button {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  width: 171px;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  margin-top: 32px;
+}
+
+.basic-button,
+.ultimate-button {
+  background-color: rgba(81, 117, 255, .1526);
+  color: #5175FF;
+}
+.pro-button {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(81, 117, 255, 1);
+}
+
+/**************************************************/
+/*  - Mobile */
+/**************************************************/
 
 /**************************************************/
 /*  - Mobile */
@@ -130,8 +230,15 @@ card-container to follow the design comp */
 /**************************************************/
 /* Footer Section  - Mobile */
 /**************************************************/
+footer {
+/* This portion brings the background-color behind the "main" element */
+  position: relative;
+  z-index: 0;
+  margin-top: -800px;
+  background-color: #25293A;
+}
 
-
+/* Begin with the footer content spacing, coloring, and decorative element */
 
 
 /**************************************************/
