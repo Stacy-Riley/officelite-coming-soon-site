@@ -41,7 +41,15 @@ img {
 /**************************************************/
 /* Header Section - Mobile First */
 /**************************************************/
+header {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-flow: column wrap;
+}
+
 .header-images-wrapper {
+  display: flex;
   position: relative;
   width: 375px;
   height: 348px;
@@ -236,11 +244,105 @@ footer {
   z-index: 0;
   margin-top: -800px;
   background-color: #25293A;
+  min-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  
+}
+.footer-figure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  min-width: none;
 }
 
-/* Begin with the footer content spacing, coloring, and decorative element */
+.footer-circle-pattern-container {
+  
+  position: absolute;
+  left: -415px;
+  bottom: -175px;
+  width: 1202px;
+}
 
+.countdown-container {
+  position: relative;
+  padding-top: 900px;
+}
 
+.countdown-container h2 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.span-countdown-date {
+  color:rgba(81, 117, 255, 1);
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.time-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row-wrap;
+  flex-basis: 375px;
+  padding-left: 23px;
+  padding-right: 24px;
+  margin-bottom: 40px;
+}
+
+.time-container div {
+  background-color: #333950;
+  width: 72px;
+  height: 92px;
+}
+
+.time-label {
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.time {
+  color: rgba(255, 255, 255, 1);
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-button-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.footer-start-button {
+  color: rgba(255, 255, 255, 1);
+  background-color: #5175FF;
+  border: none;
+  border-radius: 28px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  width: 171px;
+  height: 56px;
+  margin-bottom: 100px;
+}
+
+/* Next work on getting container for the decorative image in the footer 
+to be responsive put the figure in flexbox so it adjusts  */
 /**************************************************/
 /**************************************************/
 /* Tablet Syles */
