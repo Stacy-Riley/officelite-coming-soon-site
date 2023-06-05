@@ -245,27 +245,17 @@ footer {
   margin-top: -800px;
   background-color: #25293A;
   min-height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-  
-}
-.footer-figure-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 100%;
-  min-width: none;
+  flex-flow: column wrap;
+
 }
 
 .footer-circle-pattern-container {
-  
   position: absolute;
-  left: -415px;
-  bottom: -175px;
-  width: 1202px;
+  left: -230px;
+  bottom: 66px;
+  min-width: 850px;
 }
 
 .countdown-container {
@@ -292,12 +282,11 @@ footer {
 
 .time-container {
   display: flex;
-  justify-content: space-evenly;
-  flex-flow: row-wrap;
-  flex-basis: 375px;
-  padding-left: 23px;
-  padding-right: 24px;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
   margin-bottom: 40px;
+  width: 328px;
 }
 
 .time-container div {
