@@ -16,6 +16,7 @@
 </head>
 <body> 
   <div class="max-width-wrapper">
+<!-- Header Section -->
     <header>
       <div class="header-images-wrapper">
         <figure id="header-circle-container">
@@ -37,73 +38,79 @@
         <button>Get Started</button>
       </div> 
     </header>
+
+<!-- Card Section -->
     <main>
-      <section>
-        <div class="article-container">
-          <article>
+      <section class="card-wrapper">
+        <div class="card-container">
+          <article class="card card-basic">
             <h2>Basic</h2>
-            <p>Free</p>
-            <p>Up to 5 users for free</p>
-            <p>Basic document collaberation</p>
-            <p>2 GB storage</p>
-            <p>Great security and support</p>
-            <button id="basic-button" class="try-button">Try for Free</button>
+            <p class="cost">Free</p>
+            <p class="num-users">Up to 5 users for free</p>
+            <p class="addl-info addl-info-first">Basic document collaberation</p>
+            <p class="addl-info">2 GB storage</p>
+            <p class="addl-info">Great security and support</p>
+            <button id="basic-button" class="try-button basic-button">Try for Free</button>
           </article>
 
-          <article>
+          <article class="card card-pro">
+            <figure>
+              <img src="images/home/bg-pattern-pricing.svg" alt="decorative-circle-pattern">
+            </figure>
             <h2>Pro</h2>
-            <p>$9.99</p>
-            <p>Per user, billed monthly</p>
-            <p>All essential integrations</p>
-            <p>50 GB storage</p>
-            <p>More control and insights</p>
-            <button id="pro-button" class="try-button">Try for Free</button>
+            <p class="cost">$9.99</p>
+            <p class="num-users">Per user, billed monthly</p>
+            <p class="addl-info addl-info-first addl-info-pro">All essential integrations</p>
+            <p class="addl-info addl-info-pro">50 GB storage</p>
+            <p class="addl-info addl-info-pro">More control and insights</p>
+            <button id="pro-button" class="try-button pro-button">Try for Free</button>
           </article>
 
-          <article>
+          <article class="card card-ultimate">
             <h2>Ultimate</h2>
-            <p>$19.99</p>
-            <p>Per user, billed monthly</p>
-            <p>Robust work management</p>
-            <p>100GB storage</p>
-            <p>VIP support</p>
-            <button id="ultimate-button" class="try-button">Try for Free</button>
+            <p class="cost">$19.99</p>
+            <p class="num-users">Per user, billed monthly</p>
+            <p class="addl-info addl-info-first">Robust work management</p>
+            <p class="addl-info">100GB storage</p>
+            <p class="addl-info">VIP support</p>
+            <button id="ultimate-button" class="try-button ultimate-button">Try for Free</button>
           </article>
         </div> 
       </section>
     </main>
+<!-- Footer Section -->
     <footer>
-      <div class="footer-circle-pattern-container">
-        <figure>
-          <img src="images/home/bg-pattern-footer.svg" alt="decorative-circles">
-        </figure>
-      </div>
-      <div class="countdown-container">
-<!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-        <h2>COMING <span class="countdown-date-span">4 Nov 2020</span></h2>
-        <div>
-<!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-          <div>
-            <p id="time-days"></p>
-            <p class="days">days</p>
-          </div>
-          <div>
-            <p id="time-hours"></p>
-            <p class="hours">hours</p>
-          </div>
-          <div>
-            <p id="time-minutes"></p>
-            <p class="minutes">min</p>
-          </div>
-          <div>
-            <p id="time-seconds"></p>
-            <p class="seconds">sec</p>
+        <div class="footer-image-wrapper">
+          <figure class="footer-circle-pattern-container">
+            <img src="images/home/bg-pattern-footer.svg" alt="decorative-circles">
+          </figure>
+        </div>
+        <div class="countdown-container">
+  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+          <h2>COMING <span class="span-countdown-date">4 Nov 2020</span></h2>
+          <div class="time-container">
+  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+            <div>
+              <p class="time time-days">47</p>
+              <p class="time-label">days</p>
+            </div>
+            <div>
+              <p class="time time-hours">7</p>
+              <p class="time-label">hours</p>
+            </div>
+            <div>
+              <p class="time time-minutes">56</p>
+              <p class="time-label">min</p>
+            </div>
+            <div>
+              <p class="time time-seconds">14</p>
+              <p class="time-label">sec</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <button  class="footer-start-button">Get Started</button>
-      </div>
+        <div class="footer-button-container">
+          <button  class="footer-start-button">Get Started</button>
+        </div>
     </footer>
   </div>
 </body>
