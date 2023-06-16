@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=PT+Sans:wght@700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../starter-code/assets/favicon-32x32">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="home" type="text/html" href="../index.html">
+  <link rel="stylesheet" type="text/css" href="css/sign-up-styles.css">
+  <title>Frontend Mentor | Officelite coming soon site</title>
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <div class="max-width-wrapper">
+<!-- Header Section -->
+      <header>
+        <div class="header-images-wrapper">
+          <figure id="header-circle-container">
+            <img src="../images/home/bg-pattern-header.svg" alt="decorative-circles">
+          </figure>
+          <div class="logo-container">
+            <figure id="header-logo-container">
+              <img class="logo-art" src="../images/shared/logo.svg" alt="logo">
+            </figure> 
+            
+          </div>
+          <div class="header-message-container">
+            <h1>Work smarter. Save time.</h1>
+            <p>Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers. We are moving into final development and getting ready for official launch soon.
+            </p>
+          </div> 
+        </div>
+      </header> 
+    
+  
+<!-- Countdown Section -->
+      <section class="countdown-section">
+        
+        <div class="countdown-container">
+          <h2>COMING <span class="span-countdown-date"></span></h2>
+          <div class="time-container">
+         <div>
+              <p class="time time-days"></p>
+              <p class="time-label">days</p>
+            </div>
+            <div>
+              <p class="time time-hours"></p>
+              <p class="time-label">hours</p>
+            </div>
+            <div>
+              <p class="time time-minutes"></p>
+              <p class="time-label">min</p>
+            </div>
+            <div>
+              <p class="time time-seconds"></p>
+              <p class="time-label">sec</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Contact Section -->
+      <section class="contact-section">
+        <div class="contact-wrapper">
+          <div class="contact-container">
+            <form class="contact-form">
+              <label for="form-name"></label>
+              <input placeholder="Name" id="form-name" name="form-name" type="text">
+              
+              <label for="form-email"></label>
+              <input placeholder="Email Address" id="form-email" name="form-email" type="text">
+              
+              <label for="form-select"></label>
+              <select name="form-select" id="form-select">
+                <option value="basic-pack">Basic Pack Free</option>
+                <option value="pro-pack">Pro Pack $9.99</option>
+                <option value="ultimate-pack">Ultimate Pack $19.99</option>
+              </select>
+            
+              <label for="form-phone"></label>
+              <input placeholder="Phone Number" id="form-phone" name="form-phone" type="text">
+            
+              <label for="form-company"></label>
+              <input placeholder="Company" id="form-company" name="form-company"  type="text">
+            
+              <div class="get-on-list-button">
+                <button>Get on the list</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section> 
+      
+<!-- Footer -->
+      <footer>
+        <div class="countdown-image-wrapper">
+          <figure class="countdown-circle-pattern-container">
+            <img src="../images/home/bg-pattern-footer.svg" alt="decorative-circles">
+          </figure>
+        </div>
+      </footer>
+  </div>
+</body>
+</html>
