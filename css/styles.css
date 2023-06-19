@@ -236,7 +236,7 @@ main {
 /**************************************************/
 
 /**************************************************/
-/* Footer Section  - Mobile */
+/* Countdown Section  - Mobile */
 /**************************************************/
 footer {
 /* This portion brings the background-color behind the "main" element */
@@ -248,14 +248,14 @@ footer {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
-
 }
 
-.footer-circle-pattern-container {
+.countdown-circle-pattern-container {
   position: absolute;
-  left: -230px;
-  bottom: 66px;
-  min-width: 850px;
+  left: -415px;
+  bottom: -110px;
+  width: 1202px;
+  /* height: 1202px; */
 }
 
 .countdown-container {
@@ -310,14 +310,14 @@ footer {
   margin: 0;
 }
 
-.footer-button-container {
+.countdown-button-container {
   position: relative;
   display: flex;
   align-items: center;
   flex-flow: column wrap;
 }
 
-.footer-start-button {
+.countdown-start-button {
   color: rgba(255, 255, 255, 1);
   background-color: #5175FF;
   border: none;
