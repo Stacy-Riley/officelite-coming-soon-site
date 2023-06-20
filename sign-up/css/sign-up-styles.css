@@ -53,7 +53,7 @@ header {
   display: flex;
   position: relative;
   width: 375px;
-  height: 348px;
+  /* height: 348px; */
   /* overflow: hidden; */
 }
 
@@ -62,7 +62,7 @@ header {
   top: -170px;
   left: -42px;
   width: 458px;
-  height: 458px;
+  /* height: 458px; */
 }
 
 #header-logo-container {
@@ -75,16 +75,10 @@ header {
 
 .header-message-container {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin-top: 155px;
   margin-left: 24px;
   margin-right: 24px;
-  margin-bottom: 64px;
   text-align: center;
-  height: 100%;
 }
 
 .header-message-container h1 {
@@ -93,7 +87,6 @@ header {
   line-height: 48px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 24px;
 }
 
 .header-message-container p {
@@ -101,7 +94,7 @@ header {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 
 /**************************************************/
@@ -109,7 +102,10 @@ header {
 /**************************************************/
 .countdown-container {
     /* position: relative; */
-    padding-top: 130px;
+    padding-top: 64px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .countdown-container h2 {
@@ -118,6 +114,8 @@ header {
     line-height: 48px;
     letter-spacing: 5px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 18px;
 }
 
 .span-countdown-date {
@@ -188,6 +186,51 @@ main {
     /* z-index: 1; */
   }
 
+.contact-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.contact-form {
+  display: flex;
+  align-items: stretch;
+  min-width: 325px;
+  flex-direction: column;
+  
+}
+
+.contact-form input {
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #747B95;
+  height: 44px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #ACB0B9;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.contact-form select {
+  border: none;
+  border-bottom: 1px solid #747B95;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  height: 44px;
+  padding-left: 12px;
+  padding-right: 29px;
+  
+}
+
+
+#span-select-free {
+  color: #ACB0B9;
+}
+
 /**************************************************/
 /* Footer Section - Mobile */
 /**************************************************/
@@ -215,4 +258,4 @@ footer {
 
 }
 
-/* For next time, begin with the countdown section */
+/* For next time, begin with the form section */
