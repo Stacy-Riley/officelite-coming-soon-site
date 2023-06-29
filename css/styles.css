@@ -98,6 +98,7 @@ header {
   font-weight: 700;
   margin: 0;
   margin-bottom: 24px;
+  text-shadow: -1px 4px 2px rgba(63, 91, 194, 0.2472);
 }
 
 .header-message-container p {
@@ -106,19 +107,22 @@ header {
   line-height: 26px;
   font-weight: 400;
   margin-bottom: 24px;
+  text-shadow: -1px 4px 4px rgba(63, 91, 194, 0.2472);
 }
 
-.header-message-container button {
+.header-message-container a {
   color: rgba(255, 255, 255, 1);
   background-color: #5175FF;
   border: none;
-  box-shadow: 4px 4px 10px rgba(63, 91, 194, 0.2472);
+  box-shadow: 0px 7px 6px 0px rgba(63, 91, 194, 0.2472);
   border-radius: 28px;
   font-size: 16px;
   line-height: 28px;
   font-weight: 700;
   width: 171px;
-  height: 56px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-decoration: none;
 }
 
 /**************************************************/
@@ -130,6 +134,7 @@ main {
   position: relative;
   z-index: 1;
 }
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -198,23 +203,31 @@ main {
   font-weight: 400;
   line-height: 28px;
 }
+
 .addl-info-pro {
   color: rgba(255, 255, 255, 1);
-  
 }
+
 .addl-info-first {
   margin-top: 56px;
 }
 
-.try-button {
+.try-button-container {
+  margin-top: 50px;
+}
+
+.try-button  {
   font-size: 16px;
   line-height: 28px;
   font-weight: 700;
   width: 171px;
-  height: 56px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 43px;
+  padding-right: 40px;
   border-radius: 28px;
   border: none;
-  margin-top: 32px;
+  text-decoration: none;
 }
 
 .basic-button,
@@ -222,14 +235,12 @@ main {
   background-color: rgba(81, 117, 255, .1526);
   color: #5175FF;
 }
+
 .pro-button {
+  position: relative;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(81, 117, 255, 1);
 }
-
-/**************************************************/
-/*  - Mobile */
-/**************************************************/
 
 /**************************************************/
 /*  - Mobile */
@@ -255,7 +266,6 @@ footer {
   left: -415px;
   bottom: -110px;
   width: 1202px;
-  /* height: 1202px; */
 }
 
 .countdown-container {
@@ -285,7 +295,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   width: 328px;
 }
 
@@ -312,9 +322,12 @@ footer {
 
 .countdown-button-container {
   position: relative;
-  display: flex;
+  /* margin-top: 50px; */
+  margin-bottom: 110px;
+  /* display: flex;
+  justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: column wrap; */
 }
 
 .countdown-start-button {
@@ -325,13 +338,14 @@ footer {
   font-size: 16px;
   line-height: 28px;
   font-weight: 700;
-  width: 171px;
-  height: 56px;
-  margin-bottom: 100px;
+  /* width: 171px; */
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 41px;
+  padding-right: 41px;
+  text-decoration: none;
 }
 
-/* Next work on getting container for the decorative image in the footer 
-to be responsive put the figure in flexbox so it adjusts  */
 /**************************************************/
 /**************************************************/
 /* Tablet Syles */
