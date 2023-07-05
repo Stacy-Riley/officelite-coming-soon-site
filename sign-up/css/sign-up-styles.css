@@ -137,24 +137,29 @@ header {
 }
 
 .time-container div {
-    background-color: #333950;
+    background-color: #E9EDFA;
     width: 72px;
     height: 92px;
 }
 
 .time-label {
-    color: rgba(255, 255, 255, 1);
+    color: #979797;
     font-size: 12px;
+    font-weight: 700px;
     line-height: 28px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .time {
-    color: rgba(255, 255, 255, 1);
+    color: #5175FF;
+    font-weight: bold;
     font-size: 32px;
     line-height: 48px;
     text-align: center;
     margin: 0;
+    padding-top: 11px;
 }
 
 .countdown-button-container {
@@ -186,26 +191,39 @@ main {
     /* z-index: 1; */
   }
 
-.contact-container {
+.contact-wrapper {
+  
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-left: 24px;
-  margin-right: 24px;
+}
+.contact-container {
+  background-color: #ffffff;
+
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 327px;
+  /* margin-left: 24px;
+  margin-right: 24px; */
 }
 
 .contact-form {
+  border-radius: 13px;
   display: flex;
   align-items: stretch;
-  min-width: 325px;
+  min-width: 279px;
   flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
   
 }
 
 .contact-form input {
   font-size: 16px;
   border: none;
-  border-bottom: 1px solid #747B95;
+  border-bottom: 1px solid rgba(116, 123, 149, .5);
   height: 44px;
   line-height: 28px;
   font-weight: 400;
@@ -214,21 +232,34 @@ main {
   padding-right: 16px;
 }
 
-.contact-form select {
+#formSelect {
   border: none;
-  border-bottom: 1px solid #747B95;
+  border-bottom: 1px solid rgba(116, 123, 149, .5);
   font-size: 16px;
   font-weight: 700;
   line-height: 28px;
   height: 44px;
-  padding-left: 12px;
-  padding-right: 29px;
-  
+  /* padding-left: 12px;
+  padding-right: 29px; */
 }
-
-
-#span-select-free {
+#formSelect + .select2-container .select2-selection {
+  border: none;
   color: #ACB0B9;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(116, 123, 149, .5);
+  height: 44px;
+  line-height: 28px;
+  padding-top: 10px;
+  padding-left: 9px;
+  padding-right: 29px;
+}
+/* I was working on getting the basic pack to not be black in above prop
+erty but wasn't working  */
+
+
+/* first option - free */
+.highlight {
+  color: rgba(116, 123, 149, .5);
 }
 
 /**************************************************/
