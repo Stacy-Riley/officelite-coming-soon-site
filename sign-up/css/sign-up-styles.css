@@ -187,49 +187,49 @@ header {
 /* This code is to allow for footer background color to extend
 up behind this section of code */
 main {
-    /* position: relative;  */
-    /* z-index: 1; */
+    /* position: relative; 
+    z-index: 1; */
   }
 
 .contact-wrapper {
-  
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: column;
 }
-.contact-container {
-  background-color: #ffffff;
 
+.contact-container {
+  align-items: center;
+  background-color: #ffffff;
   border-radius: 13px;
   display: flex;
-  align-items: center;
   flex-direction: column;
   width: 327px;
-  /* margin-left: 24px;
-  margin-right: 24px; */
 }
 
 .contact-form {
+  align-items: stretch;
   border-radius: 13px;
   display: flex;
-  align-items: stretch;
-  min-width: 279px;
   flex-direction: column;
   margin-left: 24px;
   margin-right: 24px;
-  
+  min-width: 279px;
 }
 
 .contact-form input {
-  font-size: 16px;
   border: none;
   border-bottom: 1px solid rgba(116, 123, 149, .5);
+  font-size: 16px;
+  font-weight: 400;
   height: 44px;
   line-height: 28px;
-  font-weight: 400;
-  color: #ACB0B9;
   padding-left: 16px;
   padding-right: 16px;
+  margin-top: 24px;
+}
+
+.contact-form input::placeholder {
+  color: #747B95;
 }
 
 #formSelect {
@@ -239,12 +239,15 @@ main {
   font-weight: 700;
   line-height: 28px;
   height: 44px;
-  /* padding-left: 12px;
-  padding-right: 29px; */
 }
+
+#form-email {
+margin-bottom: 24px;
+}
+
 #formSelect + .select2-container .select2-selection {
   border: none;
-  color: #ACB0B9;
+  color: #747B95;
   box-shadow: none;
   border-bottom: 1px solid rgba(116, 123, 149, .5);
   height: 44px;
@@ -253,13 +256,23 @@ main {
   padding-left: 9px;
   padding-right: 29px;
 }
-/* I was working on getting the basic pack to not be black in above prop
-erty but wasn't working  */
 
-
-/* first option - free */
+/* first option - "free" wording */
 .highlight {
-  color: rgba(116, 123, 149, .5);
+  color: #747B95;
+}
+
+.submit-button {
+  background-color: #5175FF;
+  border: none;
+  border-radius: 26px;
+  color: #ffffff;
+  font-size: 16px;
+  height: 56px;
+  line-height: 28px;
+  width: 279px;
+  margin-top: 40px;
+  margin-bottom: 24px;
 }
 
 /**************************************************/
@@ -268,14 +281,14 @@ erty but wasn't working  */
 footer {
 /* This portion brings the background-color behind the "main" element */
     position: relative; 
-    /* z-index: 0; */
-    /* margin-top: -400px; */
+    z-index: 0;
+    /* margin-top: -320px; */
     background-color: #25293A;
     min-height: 320px;
-    display: flex;
+    /* display: flex;
     align-items: center;
     flex-flow: column wrap;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 .countdown-circle-pattern-container {
