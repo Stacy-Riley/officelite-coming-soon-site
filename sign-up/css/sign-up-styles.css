@@ -43,18 +43,15 @@ img {
 /**************************************************/
 header {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-flow: column wrap;
-    min-height: 100%;
+  min-height: 100%;
 }
 
 .header-images-wrapper {
   display: flex;
   position: relative;
   width: 375px;
-  /* height: 348px; */
-  /* overflow: hidden; */
 }
 
 #header-circle-container {
@@ -62,7 +59,6 @@ header {
   top: -170px;
   left: -42px;
   width: 458px;
-  /* height: 458px; */
 }
 
 #header-logo-container {
@@ -101,97 +97,92 @@ header {
 /* Countdown Section  - Mobile */
 /**************************************************/
 .countdown-container {
-    /* position: relative; */
-    padding-top: 64px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  padding-top: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .countdown-container h2 {
-    color: black;
-    font-size: 16px;
-    line-height: 48px;
-    letter-spacing: 5px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 18px;
+  color: black;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 18px;
 }
 
 .span-countdown-date {
-    color:rgba(81, 117, 255, 1);
-    font-size: 16px;
-    line-height: 48px;
-    letter-spacing: 5px;
-    text-align: center;
-    text-transform: uppercase;
+  color:rgba(81, 117, 255, 1);
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .time-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    margin-bottom: 40px;
-    width: 328px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 40px;
+  width: 328px;
 }
 
 .time-container div {
-    background-color: #E9EDFA;
-    width: 72px;
-    height: 92px;
+  background-color: #E9EDFA;
+  width: 72px;
+  height: 92px;
 }
 
 .time-label {
-    color: #979797;
-    font-size: 12px;
-    font-weight: 700px;
-    line-height: 28px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 10px;
+  color: #979797;
+  font-size: 12px;
+  font-weight: 700px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .time {
-    color: #5175FF;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 48px;
-    text-align: center;
-    margin: 0;
-    padding-top: 11px;
+  color: #5175FF;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+  padding-top: 11px;
 }
 
 .countdown-button-container {
-    /* position: relative; */
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 .countdown-start-button {
-    color: rgba(255, 255, 255, 1);
-    background-color: #5175FF;
-    border: none;
-    border-radius: 28px;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 700;
-    width: 171px;
-    height: 56px;
-    margin-bottom: 100px;
+  color: rgba(255, 255, 255, 1);
+  background-color: #5175FF;
+  border: none;
+  border-radius: 28px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  width: 171px;
+  height: 56px;
+  margin-bottom: 100px;
 }
 /**************************************************/
 /* Contact Section - Mobile */
 /**************************************************/
-/* This code is to allow for footer background color to extend
+/* First 2 properties, along with footer code allows for footer background color to extend
 up behind this section of code */
-main {
-    /* position: relative; 
-    z-index: 1; */
-  }
-
 .contact-wrapper {
+  position: relative;
+  z-index: 1;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -217,6 +208,7 @@ main {
 }
 
 .contact-form input {
+  min-width: 279px; 
   border: none;
   border-bottom: 1px solid rgba(116, 123, 149, .5);
   font-size: 16px;
@@ -239,10 +231,11 @@ main {
   font-weight: 700;
   line-height: 28px;
   height: 44px;
+  min-width: 279px; 
 }
 
 #form-email {
-margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 #formSelect + .select2-container .select2-selection {
@@ -279,27 +272,76 @@ margin-bottom: 24px;
 /* Footer Section - Mobile */
 /**************************************************/
 footer {
-/* This portion brings the background-color behind the "main" element */
+/* Top 4 properties bring the background-color behind the element above it */
     position: relative; 
     z-index: 0;
-    /* margin-top: -320px; */
-    background-color: #25293A;
+    margin-top: -220px;
     min-height: 320px;
-    /* display: flex;
+    background-color: #25293A;
+    display: flex;
     align-items: center;
-    flex-flow: column wrap;
-    overflow: hidden; */
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .countdown-circle-pattern-container {
     position: absolute;
-    left: 0;
+    left: -55px;
     bottom: 0;
     width: 486px;
     height: 486px; 
-    overflow: hidden;
+}
+/**************************************************/
+/**************************************************/
+/* Tablet Syles */
+/**************************************************/
+/**************************************************/
 
+@media(min-width: 768px) {
+/**************************************************/
+/* Header Section - Tablet */
+/**************************************************/
+
+/**************************************************/
+/* Countdown Section  - Tablet */
+/**************************************************/
+
+/**************************************************/
+/* Contace Section  - Tablet */
+/**************************************************/
+
+/**************************************************/
+/* Footer Section  - Tablet */
+/**************************************************/
 
 }
 
-/* For next time, begin with the form section */
+
+
+
+
+/**************************************************/
+/**************************************************/
+/* Desktop Syles */
+/**************************************************/
+/**************************************************/
+@media(min-width: 1440px) {  
+/**************************************************/
+/* Header Section - Desktop */
+/**************************************************/
+
+/**************************************************/
+/* Countdown Section  - Desktop */
+/**************************************************/
+
+/**************************************************/
+/* Contace Section  - Desktop */
+/**************************************************/
+
+/**************************************************/
+/* Footer Section  - Desktop */
+/**************************************************/
+
+
+
+}
