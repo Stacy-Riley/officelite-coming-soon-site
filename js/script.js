@@ -18,35 +18,45 @@ const monthAbbreviations = [
 let currentDate = new Date();
 let futureDate;
 
+ //Check if user has already visited site and has a futureDate stored in localStorage
+let storedDateTime = localStorage.getItem('futureDateTime');
+
 //Function to run when window loads:
 window.onload = function() {
   startCountdown();
 };
 
+let countdown;
+
 //Where the magic happens:
 function startCountdown () {
-  //Check if user has already visited site and has a futureDate stored in localStorage
-let storedDateTime = localStorage.getItem('futureDateTime');
+  if (storedDateTime) {
+    futureDate = new Date(parseInt(storedDateTime)); //parsInt() takes a string argument and returns an integer value
+    const nowTime = new Date().getTime();
+    const timeRemaining = futureDate - nowTime;
 
-
-if(storedDateTime){
-  //Here we want to use the storedDate. 
-  //if it is available convert the stored timestamp back to a Date object
-  futureDate = new Date(parseInt(storedDateTime));
-
-  } else {
-    //If there isn't a timestamp to be found, we will make one:
-    futureDate.setDate(currentDate.getDate() + 30);
+    if (timeRemaining > 0) {
+      // If there is remaining time, start the countdown
+      showDate();
+      return;
+    }
   }
+   // Calculate a new future date 30 days from now
+   futureDate = new Date();
+   futureDate.setDate(currentDate.getDate() + 30);
+   localStorage.setItem('futureDateTime', futureDate.getTime());
+   showDate();
+ }
+ 
 
+function showDate (){
 //Get the day number:
-// const futureDay = futureDate.getDate()
-const futureDay = new Date(futureDate).getDate();
+const futureDay = futureDate.getDate();
 //Get the year number:
-const futureYear = new Date(futureDate).getFullYear();
+const futureYear = futureDate.getFullYear();
 
 //To get the name of the future month:
-const futureMonthIndex = new Date(futureDate).getMonth();
+const futureMonthIndex = futureDate.getMonth();
 const futureMonthName = monthNames[futureMonthIndex];
 const futureMonthAbbreviation = monthAbbreviations[futureMonthIndex];
 
@@ -54,15 +64,24 @@ const futureMonthAbbreviation = monthAbbreviations[futureMonthIndex];
 const formatedDate = futureDay + " " + futureMonthAbbreviation + " " + futureYear;
 entireDate.textContent = formatedDate;
 
+// Clear the previous countdown interval (if any)
+clearInterval(countdown);
+
 // Store the future date and time as a timestamp in local storage for next time the page loads:
 localStorage.setItem('futureDateTime', futureDate.getTime());
 
-
 //Countdown function to display individual numbers:
-const countdown =  setInterval(function () {
+countdown =  setInterval(function () {
   
   const nowTime = new Date().getTime();
-  let timeRemaining = futureDate - nowTime;
+    let timeRemaining = futureDate - nowTime;
+
+    if (timeRemaining <= 0) {
+      // Restart the countdown for the next 30 days
+      clearInterval(countdown);
+      startCountdown();
+      return;
+    }
 
   //Break down the days, hours, minutes, and seconds remaining:
   let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
@@ -76,18 +95,8 @@ const countdown =  setInterval(function () {
   timeMinutes.textContent = `${minutes}`;
   timeSeconds.textContent = `${seconds}`;
 
-   // If the countdown is finished, countdown gets restarted:
-   if (timeRemaining < 0) {
-    clearInterval(countdown);
-    console.log('Countdown finished!');
-    startCountdown(); //restarts here
-  }
-
 }, 1000);
 }
-
-
-
 
 
 //  Steps for this program:
