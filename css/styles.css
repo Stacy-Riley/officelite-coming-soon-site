@@ -43,20 +43,18 @@ img {
 /**************************************************/
 header {
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  flex-flow: column wrap;
-}
-
-.header-images-wrapper {
-  display: flex;
+  flex-direction: column;
   position: relative;
-  width: 375px;
-  height: 348px;
-  overflow: hidden;
 }
 
-#header-circle-container {
+.header-wrapper-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#header-circle {
   position: absolute;
   top: -170px;
   left: -42px;
@@ -64,23 +62,29 @@ header {
   height: 458px;
 }
 
-#header-logo-container {
-  position: absolute;
-  top: 46px;
-  left: 110px;
+.header-container-logo {
+  margin-top: 46px;
+}
+
+#header-logo {
   width: 155px;
   height: 30px;
 }
 
-#header-charts-container {
-  position: absolute;
-  top: 156px;
-  left: 102px;
+.header-wrapper-charts-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+#header-charts {
   width: 171px;
   height: 192px;
 }
 
-.header-message-container {
+.header-container-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +95,7 @@ header {
   text-align: center;
 }
 
-.header-message-container h1 {
+.header-container-content h1 {
   color: rgba(51, 57, 80, 1);
   font-size: 40px;
   line-height: 48px;
@@ -101,16 +105,17 @@ header {
   text-shadow: -1px 4px 2px rgba(63, 91, 194, 0.2472);
 }
 
-.header-message-container p {
+.header-container-content p {
   color: rgba(116, 123, 149, 1);
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+  margin-top: 0;
   margin-bottom: 24px;
   text-shadow: -1px 4px 4px rgba(63, 91, 194, 0.2472);
 }
 
-.header-message-container a {
+.header-container-content a {
   color: rgba(255, 255, 255, 1);
   background-color: #5175FF;
   border: none;
@@ -243,11 +248,7 @@ main {
 }
 
 /**************************************************/
-/*  - Mobile */
-/**************************************************/
-
-/**************************************************/
-/* Countdown Section  - Mobile */
+/* Countdown-Footer Section  - Mobile */
 /**************************************************/
 footer {
 /* This portion brings the background-color behind the "main" element */
@@ -356,11 +357,76 @@ footer {
 /**************************************************/
 /* Header Section - Tablet */
 /**************************************************/
-   
+  header {
+    display: block;
+  }
+  
+  .header-wrapper-main {
+    display: block;
+  }
 
+  #header-circle {
+    position: absolute;
+    top: -164px;
+    left: 395px;
+    width: 666px;
+    height: 666px;
+  }
+
+  .header-container-logo {
+    margin-top: 72px;
+    margin-left: 39px;
+  }
+  
+  .header-wrapper-charts-content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 104px;
+  }
+
+  #header-charts {
+    width: 281px;
+    height: 314px;
+    margin-right: 40px;
+  }
+
+  .order-of-charts {
+    order: 2;
+    width: 50%;
+    margin-left: 39px;
+  }
+
+  order-of-content {
+    order: 1;
+    width: 50%;
+  }
+
+  .header-container-content {
+    display: flex;
+    align-items: start;
+    margin-top: 0;
+    margin-left: 39px;
+    margin-right: 0;
+  }
+
+  .header-container-content h1,
+  .header-container-content p {
+    text-align: left;
+  }
+  
+/**************************************************/
+/* Card Section - Tablet */
+/**************************************************/ 
+  
+/**************************************************/
+/* Countdown-Footer Section - Tablet */
+/**************************************************/
 
 
 }
+
 /**************************************************/
 /**************************************************/
 /* Desktop Syles */
@@ -370,4 +436,15 @@ footer {
 /**************************************************/
 /* Header Section - Desktop */
 /**************************************************/  
+
+/**************************************************/
+/* Card Section - Desktop */
+/**************************************************/  
+
+/**************************************************/
+/* Countdown-Footer Section - Desktop */
+/**************************************************/  
+
+
+
 }
