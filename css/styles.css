@@ -38,6 +38,16 @@ figure {
 img {
   width: 100%;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 /**************************************************/
 /* Header Section - Mobile First */
 /**************************************************/
@@ -157,10 +167,12 @@ main {
 }
 
 .card-basic {
+  color: #333950;
   background-color: #ffffff; 
 }
 
 .card-ultimate {
+  color: #333950;
   background-color: #ffffff;
 }
 
@@ -180,11 +192,16 @@ main {
   left: -275px;
   
 }
+
+.card-part-1 {
+  margin-top: 40px;
+}
+
 .card h2 {
+  position: relative;
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
-  margin-top: 40px;
 }
 
 .cost {
@@ -213,11 +230,11 @@ main {
   color: rgba(255, 255, 255, 1);
 }
 
-.addl-info-first {
+.card-part-2 {
   margin-top: 56px;
 }
 
-.try-button-container {
+.card-part-3 {
   margin-top: 50px;
 }
 
@@ -419,11 +436,56 @@ footer {
 /**************************************************/
 /* Card Section - Tablet */
 /**************************************************/ 
-  
+ .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 689px;
+    height: 316px;
+    text-align: left;
+  }
+  .card-part-1 {
+    text-align: left;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 48px;
+  }
+  .card-part-2 {
+    text-align: left;
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 48px;
+    margin-top: 92px;
+  }
+  .card-part-3 {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+    margin-left: 48px;
+    margin-bottom: 48px;
+  }
+  .cost {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  .card-pro figure {
+    position: absolute;
+    width: 880px;
+    bottom: 0;
+    left: -325px;
+    top: -280px;
+  }
 /**************************************************/
 /* Countdown-Footer Section - Tablet */
 /**************************************************/
-
+  .countdown-circle-pattern-container {
+    position: absolute;
+    left: -215px;
+    bottom: -390px;
+    width: 1202px;
+  }
 
 }
 
