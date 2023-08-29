@@ -28,7 +28,6 @@ body {
   horizontal scrollbar, plus make sure margin is 0 so displays to the edge */
   overflow: hidden;
   margin: 0;
-  
  } 
 
 figure {
@@ -38,6 +37,7 @@ figure {
 img {
   width: 100%;
 }
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -65,6 +65,14 @@ header {
 }
 
 #header-circle {
+  position: absolute;
+  top: -170px;
+  left: -42px;
+  width: 458px;
+  height: 458px;
+}
+
+#header-circle-sign-up {
   position: absolute;
   top: -170px;
   left: -42px;
@@ -140,8 +148,38 @@ header {
   text-decoration: none;
 }
 
+/* Sign-up Page header section */
+.header-container-content-sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: 80px;
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: center;
+}
+
+.header-container-content-sign-up h1 {
+  position: relative;
+  color: rgba(51, 57, 80, 1);
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 16px; 
+}
+
+.header-container-content-sign-up p {
+  color: rgba(116, 123, 149, 1);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /**************************************************/
-/* Card Section - Mobile */
+/* Homepage - Card Section - Mobile */
 /**************************************************/
 /* This code is to allow for footer background color to extend
 up behind this section of code */
@@ -265,7 +303,7 @@ main {
 }
 
 /**************************************************/
-/* Countdown-Footer Section  - Mobile */
+/* Homepage - Countdown-Footer Section  - Mobile */
 /**************************************************/
 footer {
 /* This portion brings the background-color behind the "main" element */
@@ -340,12 +378,7 @@ footer {
 
 .countdown-button-container {
   position: relative;
-  /* margin-top: 50px; */
   margin-bottom: 110px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap; */
 }
 
 .countdown-start-button {
@@ -356,14 +389,210 @@ footer {
   font-size: 16px;
   line-height: 28px;
   font-weight: 700;
-  /* width: 171px; */
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 41px;
   padding-right: 41px;
   text-decoration: none;
 }
+/**************************************************/
+/* Sign-up Page - Countdown Section  - Mobile */
+/**************************************************/
+.countdown-container-sign-up {
+  padding-top: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
+.countdown-container-sign-up h2 {
+  color: black;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.span-countdown-date-sign-up {
+  color:rgba(81, 117, 255, 1);
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.time-container-sign-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 64px;
+  width: 328px;
+}
+
+.time-container-sign-up div {
+  background-color: #E9EDFA;
+  width: 72px;
+  height: 92px;
+}
+
+.time-label-sign-up {
+  color: #979797;
+  font-size: 12px;
+  font-weight: 700px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.time-sign-up {
+  color: #5175FF;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+  padding-top: 11px;
+}
+
+.countdown-button-container-sign-up {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.countdown-start-button-sign-up {
+  color: rgba(255, 255, 255, 1);
+  background-color: #5175FF;
+  border: none;
+  border-radius: 28px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  width: 171px;
+  height: 56px;
+  margin-bottom: 100px;
+}
+/**************************************************/
+/* Sign-up Page - Contact Section - Mobile */
+/**************************************************/
+/* First 2 properties, along with footer code allows for footer background color to extend
+up behind this section of code */
+.contact-wrapper {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+}
+
+.contact-form {
+  align-items: stretch;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+  min-width: 279px;
+}
+
+.contact-form input {
+  min-width: 279px; 
+  border: none;
+  border-bottom: 1px solid rgba(116, 123, 149, .5);
+  font-size: 16px;
+  font-weight: 400;
+  height: 44px;
+  line-height: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 24px;
+}
+
+.contact-form input::placeholder {
+  color: #747B95;
+}
+
+#formSelect {
+  border: none;
+  border-bottom: 1px solid rgba(116, 123, 149, .5);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  height: 44px;
+  min-width: 279px; 
+}
+
+#form-email {
+  margin-bottom: 24px;
+}
+
+#formSelect + .select2-container .select2-selection {
+  border: none;
+  color: #747B95;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(116, 123, 149, .5);
+  height: 44px;
+  line-height: 28px;
+  padding-top: 10px;
+  padding-left: 9px;
+  padding-right: 29px;
+}
+
+/* first option - "free" wording */
+.highlight {
+  color: #747B95;
+}
+
+.submit-button {
+  background-color: #5175FF;
+  border: none;
+  border-radius: 26px;
+  color: #ffffff;
+  font-size: 16px;
+  height: 56px;
+  line-height: 28px;
+  width: 279px;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+/**************************************************/
+/* Sign-up Page - Footer Section - Mobile */
+/**************************************************/
+footer {
+/* Top 4 properties bring the background-color behind the element above it */
+    position: relative; 
+    z-index: 0;
+    margin-top: -220px;
+    min-height: 320px;
+    background-color: #25293A;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.countdown-circle-pattern-container {
+    position: absolute;
+    left: -55px;
+    bottom: 0;
+    width: 486px;
+    height: 486px; 
+}
 /**************************************************/
 /**************************************************/
 /* Tablet Syles */
@@ -432,9 +661,18 @@ footer {
   .header-container-content p {
     text-align: left;
   }
-  
+
+  /** Sign up page-tablet **/
+  #header-circle-sign-up {
+    display: none;
+  }
+  .header-container-content-sign-up {
+    margin-top: 104px;
+    margin-left: 98px;
+    margin-right: 98px;
+  }
 /**************************************************/
-/* Card Section - Tablet */
+/* Homepage - Card Section - Tablet */
 /**************************************************/ 
  .card {
     display: grid;
@@ -478,7 +716,7 @@ footer {
     top: -280px;
   }
 /**************************************************/
-/* Countdown-Footer Section - Tablet */
+/* Homepage - Countdown-Footer Section - Tablet */
 /**************************************************/
   .countdown-circle-pattern-container {
     position: absolute;
@@ -486,9 +724,37 @@ footer {
     bottom: -390px;
     width: 1202px;
   }
+ /* Countdown Section Sign-up Page */
+ .countdown-container-sign-up {
+  padding-top: 45px;
+ }
+ .countdown-container-sign-up h2 {
+  margin-bottom: 8px;
+ }
+ .time-container-sign-up {
+  margin-bottom: 104px;
+  width: 445px;
+ }
+ 
+ .time-container-sign-up div {
+  width: 100px;
+  height: 128px;
+}
+
+.time-label-sign-up {
+  font-size: 16px;
+  margin-bottom: 0;
 
 }
 
+.time-sign-up {
+  font-size: 56px;
+  line-height: 48px;
+  margin-top: 17px;
+}
+
+}
+/* Start on the sign-up page contact form styles for tablet */
 /**************************************************/
 /**************************************************/
 /* Desktop Syles */
