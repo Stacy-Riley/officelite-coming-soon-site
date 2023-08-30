@@ -681,12 +681,14 @@ footer {
     height: 316px;
     text-align: left;
   }
+
   .card-part-1 {
     text-align: left;
     grid-column: 1;
     grid-row: 1;
     margin-left: 48px;
   }
+
   .card-part-2 {
     text-align: left;
     grid-column: 2;
@@ -694,6 +696,7 @@ footer {
     margin-left: 48px;
     margin-top: 92px;
   }
+
   .card-part-3 {
     grid-column: 1;
     grid-row: 2;
@@ -701,6 +704,7 @@ footer {
     margin-left: 48px;
     margin-bottom: 48px;
   }
+
   .cost {
     font-size: 56px;
     font-weight: 700;
@@ -708,6 +712,7 @@ footer {
     margin-top: 16px;
     margin-bottom: 0;
   }
+
   .card-pro figure {
     position: absolute;
     width: 880px;
@@ -724,35 +729,37 @@ footer {
     bottom: -390px;
     width: 1202px;
   }
+
  /* Countdown Section Sign-up Page */
- .countdown-container-sign-up {
-  padding-top: 45px;
- }
- .countdown-container-sign-up h2 {
-  margin-bottom: 8px;
- }
- .time-container-sign-up {
-  margin-bottom: 104px;
-  width: 445px;
- }
+  .countdown-container-sign-up {
+    padding-top: 45px;
+  }
+
+  .countdown-container-sign-up h2 {
+    margin-bottom: 8px;
+  }
+
+  .time-container-sign-up {
+    margin-bottom: 104px;
+    width: 445px;
+  }
  
- .time-container-sign-up div {
-  width: 100px;
-  height: 128px;
-}
+  .time-container-sign-up div {
+    width: 100px;
+    height: 128px;
+  }
 
-.time-label-sign-up {
-  font-size: 16px;
-  margin-bottom: 0;
+  .time-label-sign-up {
+    font-size: 16px;
+    margin-bottom: 0;
 
-}
+  }
 
-.time-sign-up {
-  font-size: 56px;
-  line-height: 48px;
-  margin-top: 17px;
-}
-
+  .time-sign-up {
+    font-size: 56px;
+    line-height: 48px;
+    margin-top: 17px;
+  }
 }
 /* Start on the sign-up page contact form styles for tablet */
 /**************************************************/
