@@ -666,11 +666,30 @@ footer {
   #header-circle-sign-up {
     display: none;
   }
+
   .header-container-content-sign-up {
     margin-top: 104px;
     margin-left: 98px;
     margin-right: 98px;
   }
+  /* Contact form */
+  .contact-container {
+    width: 445px;
+  }
+
+  .contact-form {
+    min-width: 360px;
+  }
+  
+  .contact-form input {
+    min-width: 360px; 
+    height: 45px;
+  }
+  
+  #formSelect {
+    min-width: 360px; 
+  }
+/* Start session with form button */
 /**************************************************/
 /* Homepage - Card Section - Tablet */
 /**************************************************/ 
