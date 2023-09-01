@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=PT+Sans:wght@700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../starter-code/assets/favicon-32x32">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="home" type="text/html" href="../index.html">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">~`
+  <!-- Select2 Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0/css/select2.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0/js/select2.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<title>Frontend Mentor | Officelite coming soon site</title>
+  <script src="../js/script.js" defer></script>
+  <script src="../js/dropdown.js" defer></script>
+
+</head>
+<body>
+  <div class="max-width-wrapper">
+<!-- Header Section -->
+      <header>
+        <div class="header-wrapper-main">
+          <div class="header-container-circle">
+            <figure id="header-circle-sign-up">
+              <img src="../images/home/bg-pattern-header.svg" alt="decorative-circles">
+            </figure>
+          </div>
+          <div class="header-container-logo">
+            <figure id="header-logo">
+              <img class="logo-art" src="../images/shared/logo.svg" alt="logo">
+            </figure> 
+          </div>
+          <div class="header-container-content-sign-up">
+            <h1>Work smarter. Save time.</h1>
+            <p>Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers. We are moving into final development and getting ready for official launch soon.
+            </p>
+          </div> 
+        </div>
+      </header> 
+    
+      <main>
+<!-- Countdown Section -->
+        <section class="countdown-section-sign-up">
+          
+          <div class="countdown-container-sign-up">
+            <h2>COMING <span class="span-countdown-date"></span></h2>
+            <div class="time-container-sign-up">
+          <div>
+                <p class="time-sign-up time-days"></p>
+                <p class="time-label-sign-up">days</p>
+              </div>
+              <div>
+                <p class="time time-sign-up time-hours"></p>
+                <p class="time-label-sign-up">hours</p>
+              </div>
+              <div>
+                <p class="time time-sign-up time-minutes"></p>
+                <p class="time-label-sign-up">min</p>
+              </div>
+              <div>
+                <p class="time time-sign-up time-seconds"></p>
+                <p class="time-label-sign-up">sec</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+<!-- Contact Section -->
+        <section id="contact-section" class="contact-section">
+          <div class="contact-wrapper">
+            <div class="contact-container">
+              <form class="contact-form">
+                <label for="form-name">
+                  <input placeholder="Name" id="form-name" name="form-name" type="text" required>
+                </label>
+                <label for="form-email">
+                  <input placeholder="Email Address" id="form-email" name="form-email" type="text" required>
+                </label>
+                
+                <label for="formSelect">
+                  <select name="formSelect" id="formSelect">
+                    <option id="1" value="1">Basic Pack Free</option>
+                    <option value="2">Pro Pack $9.99</option>
+                    <option value="3">Ultimate Pack $19.99</option>
+                  </select>
+                </label>
+                <label for="form-phone">
+                  <input placeholder="Phone Number" id="form-phone" name="form-phone" type="text" required>
+                </label>
+                <label for="form-company">
+                  <input placeholder="Company" id="form-company" name="form-company"  type="text" required>
+                </label>
+                <div class="get-on-list-button">
+                  <button class="submit-button">Get on the list</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section> 
+      </main> 
+<!-- Footer -->
+      <footer>
+        <div class="countdown-image-wrapper">
+          <figure class="countdown-circle-pattern-container-sign-up">
+            <img src="../images/sign-up/bg-pattern-side.svg" alt="decorative-circles">
+          </figure>
+        </div>
+      </footer>
+  </div>
+</body>
+</html>
