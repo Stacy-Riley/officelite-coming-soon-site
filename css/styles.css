@@ -148,36 +148,6 @@ header {
   text-decoration: none;
 }
 
-/* Sign-up Page header section */
-.header-container-content-sign-up {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  margin-top: 80px;
-  margin-left: 24px;
-  margin-right: 24px;
-  text-align: center;
-}
-
-.header-container-content-sign-up h1 {
-  position: relative;
-  color: rgba(51, 57, 80, 1);
-  font-size: 40px;
-  line-height: 48px;
-  font-weight: 700;
-  margin: 0;
-  margin-bottom: 16px; 
-}
-
-.header-container-content-sign-up p {
-  color: rgba(116, 123, 149, 1);
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 /**************************************************/
 /* Homepage - Card Section - Mobile */
 /**************************************************/
@@ -395,6 +365,40 @@ footer {
   padding-right: 41px;
   text-decoration: none;
 }
+
+
+/**************************************************/
+/* Sign-up Page Header Section - Mobile First */
+/**************************************************/
+.header-container-content-sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: 80px;
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: center;
+}
+
+.header-container-content-sign-up h1 {
+  position: relative;
+  color: rgba(51, 57, 80, 1);
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 16px; 
+}
+
+.header-container-content-sign-up p {
+  color: rgba(116, 123, 149, 1);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /**************************************************/
 /* Sign-up Page - Countdown Section  - Mobile */
 /**************************************************/
@@ -442,7 +446,7 @@ footer {
 .time-label-sign-up {
   color: #979797;
   font-size: 12px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 28px;
   text-align: center;
   margin-top: 0;
@@ -575,23 +579,23 @@ up behind this section of code */
 /**************************************************/
 footer {
 /* Top 4 properties bring the background-color behind the element above it */
-    position: relative; 
-    z-index: 0;
-    margin-top: -220px;
-    min-height: 320px;
-    background-color: #25293A;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
+  position: relative; 
+  z-index: 0;
+  margin-top: -220px;
+  min-height: 320px;
+  background-color: #25293A;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.countdown-circle-pattern-container {
-    position: absolute;
-    left: -55px;
-    bottom: 0;
-    width: 486px;
-    height: 486px; 
+.countdown-circle-pattern-container-sign-up {
+  position: absolute;
+  left: -55px;
+  bottom: 0;
+  width: 486px;
+  height: 486px; 
 }
 /**************************************************/
 /**************************************************/
@@ -672,7 +676,7 @@ footer {
     margin-left: 98px;
     margin-right: 98px;
   }
-  /* Contact form */
+  /* Sign up page -Contact form tablet */
   .contact-container {
     width: 445px;
   }
@@ -689,7 +693,12 @@ footer {
   #formSelect {
     min-width: 360px; 
   }
-/* Start session with form button */
+
+  .submit-button {
+    width: 360px;
+    margin-bottom: 51px;
+  }
+
 /**************************************************/
 /* Homepage - Card Section - Tablet */
 /**************************************************/ 
@@ -771,7 +780,6 @@ footer {
   .time-label-sign-up {
     font-size: 16px;
     margin-bottom: 0;
-
   }
 
   .time-sign-up {
@@ -779,8 +787,22 @@ footer {
     line-height: 48px;
     margin-top: 17px;
   }
+
+  .countdown-circle-pattern-container-sign-up {
+    position: absolute;
+    left: 120px;
+    bottom: -65px;
+    width: 550px;
+    height: 550px; 
+  }
+
+  /* Sign up page Footer */
+  footer {
+    margin-top: -245px;
+    min-height: 380px;
+  }
 }
-/* Start on the sign-up page contact form styles for tablet */
+
 /**************************************************/
 /**************************************************/
 /* Desktop Syles */
@@ -791,6 +813,7 @@ footer {
 /* Header Section - Desktop */
 /**************************************************/  
 
+    /* Start on homepage desktop styles */
 /**************************************************/
 /* Card Section - Desktop */
 /**************************************************/  
