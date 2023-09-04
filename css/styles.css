@@ -15,9 +15,14 @@ html {
 }
 
 body {
+  background-color: #F2F2F2;
   font-family: 'Kumbh Sans', sans-serif;
   min-height: 100%;
-  margin: 0;   
+  margin: 0;  
+  /* To center the content of the max-width-wrapper on large viewports */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
 .max-width-wrapper {
@@ -90,6 +95,7 @@ header {
 }
 
 .header-wrapper-charts-content {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,6 +109,7 @@ header {
 }
 
 .header-container-content {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -811,9 +818,60 @@ footer {
 @media(min-width: 1440px) {
 /**************************************************/
 /* Header Section - Desktop */
-/**************************************************/  
+/**************************************************/    
+  .max-width-wrapper {
+    overflow: visible;
+  } 
 
-    /* Start on homepage desktop styles */
+ .header-container-logo {
+    margin-top: 81px;
+    margin-left: 165px;
+  }
+  
+  .header-wrapper-charts-content {
+    margin-top: 174px;
+  }
+
+  .header-container-content {
+    margin-left: 165px;
+  }
+
+  .header-container-charts {
+    position: relative;
+  }
+
+  #header-charts {
+    width: 475px;
+    height: 531px;
+    margin-right: 165px;
+  }
+
+  .order-of-charts {
+    margin-left: 95px;
+  }
+
+  #header-circle {
+    position: absolute;
+    top: -450px;
+    left: 670px;
+    width: 1134px;
+    height: 1134px;
+  }
+
+  .header-container-content h1 {
+    font-size: 56px;
+    line-height: 64px;
+    text-shadow: none;
+  }
+  
+  .header-container-content p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 32px;
+    text-shadow: none;
+  }
+  
+/*  Start on homepage, desktop, cards section */
 /**************************************************/
 /* Card Section - Desktop */
 /**************************************************/  
