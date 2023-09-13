@@ -286,7 +286,7 @@ main {
 /**************************************************/
 /* Homepage - Countdown-Footer Section  - Mobile */
 /**************************************************/
-footer {
+.countdown-section {
 /* This portion brings the background-color behind the "main" element */
   position: relative;
   z-index: 0;
@@ -360,6 +360,8 @@ footer {
 .countdown-button-container {
   position: relative;
   margin-bottom: 110px;
+  display: flex;
+  justify-content: center;
 }
 
 .countdown-start-button {
@@ -588,7 +590,7 @@ up behind this section of code */
 /**************************************************/
 /* Sign-up Page - Footer Section - Mobile */
 /**************************************************/
-footer {
+.signup-countdown-container {
 /* Top 4 properties bring the background-color behind the element above it */
   position: relative; 
   z-index: 0;
@@ -815,8 +817,8 @@ footer {
     height: 550px; 
   }
 
-  /* Sign up page Footer */
-  footer {
+  /* Sign up page footer */
+  .signup-countdown-container {
     margin-top: -245px;
     min-height: 380px;
   }
@@ -886,64 +888,90 @@ footer {
 /**************************************************/
 /* Card Section - Desktop */
 /**************************************************/  
-.card-container {
-  /* display: flex; */
-  justify-content: space-around;
-  /* align-items: center; */
-  flex-flow: row wrap;
-  margin-top: 184px;
-  margin-left: 165px;
-  margin-right: 165px;
-}
+  .card-container {
+    /* display: flex; */
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-flow: row wrap;
+    margin-top: 184px;
+    margin-left: 165px;
+    margin-right: 165px;
+  }
 
-.card {
-  width: 350px;
-  height: 508px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+  .card {
+    width: 350px;
+    height: 508px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-.card-part-1 {
-  margin-left: 0;
-  margin-top: 40px;
-  text-align: center;
-}
+  .card-part-1 {
+    margin-left: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
 
-.card-part-2 {
-  margin-left: 0;
-  margin-top: 56px;
-  text-align: center;
-}
+  .card-part-2 {
+    margin-left: 0;
+    margin-top: 56px;
+    text-align: center;
+  }
 
-.card-part-3 {
-  margin-left: 0;
-  margin-top: 46px;
-  margin-bottom: 54px;
-  text-align: center;
-}
+  .card-part-3 {
+    margin-left: 0;
+    margin-top: 46px;
+    margin-bottom: 54px;
+    text-align: center;
+  }
 
-.cost {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 64px;
-  margin-top: 8px;
-  margin-bottom: 0;
-}
+  .cost {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
 
-.addl-info {
-  margin-top: 0;
-}
+  .addl-info {
+    margin-top: 0;
+  }
 
-.card-pro figure {
-  left: -265px;
-  top: -390px;
-}
+  .card-pro figure {
+    left: -265px;
+    top: -390px;
+  }
 /**************************************************/
 /* Countdown-Footer Section - Desktop */
 /**************************************************/  
-/* start with footer section in desktop view homepage */
+  .countdown-section {
+    margin-top: -300px;
+    min-height: 380px;
+  }  
 
+  .countdown-content-container {
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+    flex-direction: row;
+    width: 1110px;
+    margin-left: 165px;
+    margin-right: 165px;
+    margin-top: 156px;
+    margin-bottom: 151px;
+  }
 
+  .countdown-container,
+  .countdown-button-container {
+    padding-top: 0;
+  }
+
+  .countdown-image-wrapper {
+    margin-top: 300px;
+  }
+
+/* Begin with desktop footer section,countdown-container and button fonts and spacing,
+figure image needs adjusted also */
 }
+
