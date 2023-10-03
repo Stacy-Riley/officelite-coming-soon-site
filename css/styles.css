@@ -23,15 +23,15 @@ body {
   display: flex;
   justify-content: center; 
   align-items: center; 
+  /* overflow: hidden; */
+  /* hides the excess portions of the decorative elements so there isn't a 
+  horizontal scrollbar, plus make sure margin is 0 so displays to the edge */
 }
 
 .max-width-wrapper {
   background-color: #F2F2F2;
   min-height: 100%; 
   max-width: 1440px;
-  /* Overflow: hidden hides the excess portions of the decorative elements so there isn't a 
-  horizontal scrollbar, plus make sure margin is 0 so displays to the edge */
-  overflow: hidden;
   margin: 0;
  } 
 
@@ -60,6 +60,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .header-wrapper-main {
@@ -340,6 +341,7 @@ main {
   background-color: #333950;
   width: 72px;
   height: 92px;
+  border-radius: 4px;
 }
 
 .time-label {
@@ -347,6 +349,7 @@ main {
   font-size: 12px;
   line-height: 28px;
   text-align: center;
+  opacity: 0.5;
 }
 
 .time {
@@ -454,6 +457,7 @@ main {
   background-color: #E9EDFA;
   width: 72px;
   height: 92px;
+  border-radius: 4px;
 }
 
 .time-label-sign-up {
@@ -890,7 +894,7 @@ up behind this section of code */
 /**************************************************/  
   .card-container {
     /* display: flex; */
-    justify-content: space-around;
+    justify-content: space-between;
     /* align-items: center; */
     flex-flow: row wrap;
     margin-top: 184px;
@@ -958,8 +962,8 @@ up behind this section of code */
     width: 1110px;
     margin-left: 165px;
     margin-right: 165px;
-    margin-top: 156px;
-    margin-bottom: 151px;
+    margin-top: 42px;
+    margin-bottom: 91px;
   }
 
   .countdown-container,
@@ -971,7 +975,30 @@ up behind this section of code */
     margin-top: 300px;
   }
 
-/* Begin with desktop footer section,countdown-container and button fonts and spacing,
+  .time {
+    font-size: 56px;
+    margin-top: 24px;
+  }
+
+  .time-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+    width: 448px;
+  }
+
+  .time-container div {
+    width: 100px;
+    height: 128px;
+  }
+
+  .countdown-container h2 {
+    text-align: left;
+  }
+
+/* Begin with desktop footer section, button fonts and spacing,
 figure image needs adjusted also */
 }
 
