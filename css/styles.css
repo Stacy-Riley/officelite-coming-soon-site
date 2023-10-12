@@ -293,10 +293,11 @@ main {
   z-index: 0;
   margin-top: -800px;
   background-color: #25293A;
-  min-height: 100%;
+  /* min-height: 100%; */
   display: flex;
   align-items: center;
   flex-flow: column wrap;
+  overflow: hidden;
 }
 
 .countdown-circle-pattern-container {
@@ -382,6 +383,9 @@ main {
   text-decoration: none;
 }
 
+.countdown-circle-pattern-container {
+  overflow: hidden;
+}
 
 /**************************************************/
 /* Sign-up Page Header Section - Mobile First */
