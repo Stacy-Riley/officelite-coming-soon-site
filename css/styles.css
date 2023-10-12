@@ -998,7 +998,11 @@ up behind this section of code */
     text-align: left;
   }
 
-/* Begin with desktop footer section, button fonts and spacing,
-figure image needs adjusted also */
+  .countdown-circle-pattern-container {
+    position: absolute;
+    left: -700px;
+    bottom: -770px;
+    width: 2046px;
+  }
 }
 
