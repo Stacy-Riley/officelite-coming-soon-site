@@ -626,7 +626,7 @@ up behind this section of code */
 
 @media(min-width: 768px) {
 /**************************************************/
-/* Header Section - Tablet */
+/* Homepage Header Section - Tablet */
 /**************************************************/
   header {
     display: block;
@@ -839,7 +839,7 @@ up behind this section of code */
 /**************************************************/
 @media(min-width: 1440px) {
 /**************************************************/
-/* Header Section - Desktop */
+/* Homepage Header Section - Desktop */
 /**************************************************/    
   .max-width-wrapper {
     overflow: visible;
@@ -894,7 +894,7 @@ up behind this section of code */
   }
 
 /**************************************************/
-/* Card Section - Desktop */
+/* Homepage Card Section - Desktop */
 /**************************************************/  
   .card-container {
     /* display: flex; */
@@ -951,7 +951,7 @@ up behind this section of code */
     top: -390px;
   }
 /**************************************************/
-/* Countdown-Footer Section - Desktop */
+/* Homepage - Countdown-Footer Section - Desktop */
 /**************************************************/  
   .countdown-section {
     margin-top: -300px;
@@ -1008,5 +1008,32 @@ up behind this section of code */
     bottom: -770px;
     width: 2046px;
   }
+/**************************************************/
+/* Signup Page Header Section - Desktop */
+/**************************************************/    
+  .max-width-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+/**************************************************/
+/* Signup - Countdown-Footer Section - Desktop */
+/**************************************************/  
+  .signup-countdown-container {
+    width: 29%;
+  }
+
+  .countdown-circle-pattern-container-sign-up {
+      position: absolute;
+      left: -550px;
+      bottom: 0;
+      top: -250px;
+      width: 1440px;
+      height: 1440px; 
+  }
 }
 
+/* Next time start on the sign up page, desktop view.  The side with rings is in place. 
+start with the header and main element placement.
+*/
