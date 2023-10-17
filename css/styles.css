@@ -22,7 +22,7 @@ body {
   /* To center the content of the max-width-wrapper on large viewports */
   display: flex;
   justify-content: center; 
-  align-items: center; 
+  /* align-items: center;  */
   /* overflow: hidden; */
   /* hides the excess portions of the decorative elements so there isn't a 
   horizontal scrollbar, plus make sure margin is 0 so displays to the edge */
@@ -1017,11 +1017,25 @@ up behind this section of code */
     flex-direction: row;
   }
 
+  header {
+    width: 50%;
+  }
+/**************************************************/
+/* Signup - Main Section - Desktop */
+/**************************************************/  
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 165px;
+    margin-right: -237px;
+  }
+ 
 /**************************************************/
 /* Signup - Countdown-Footer Section - Desktop */
 /**************************************************/  
   .signup-countdown-container {
-    width: 29%;
+    width: 420px;
   }
 
   .countdown-circle-pattern-container-sign-up {
