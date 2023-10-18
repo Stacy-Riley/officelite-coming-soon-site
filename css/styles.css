@@ -1013,13 +1013,31 @@ up behind this section of code */
 /**************************************************/    
   .max-width-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
   }
 
   header {
-    width: 50%;
+    width: 70%;
   }
+
+  .header-container-content-sign-up {
+    margin-top: 154px;
+    margin-left: 165px;
+    margin-right: 0;
+    text-align: left;
+  }
+  .header-container-content-sign-up h1 {
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 24px;
+  }
+
+  .header-container-content-sign-up p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
 /**************************************************/
 /* Signup - Main Section - Desktop */
 /**************************************************/  
@@ -1031,11 +1049,15 @@ up behind this section of code */
     margin-right: -237px;
   }
  
+  .contact-container {
+    margin-top: -240px;
+    box-shadow: 2px 20px 20px 5px rgb(78 84 103 / 25%);
+  }
 /**************************************************/
 /* Signup - Countdown-Footer Section - Desktop */
 /**************************************************/  
   .signup-countdown-container {
-    width: 420px;
+    width: 30%;
   }
 
   .countdown-circle-pattern-container-sign-up {
