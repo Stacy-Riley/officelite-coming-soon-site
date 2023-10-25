@@ -15,24 +15,25 @@ html {
 }
 
 body {
-  background-color: #F2F2F2;
   font-family: 'Kumbh Sans', sans-serif;
   min-height: 100%;
   margin: 0;  
-  /* To center the content of the max-width-wrapper on large viewports */
-  display: flex;
-  justify-content: center; 
-  /* align-items: center;  */
-  /* overflow: hidden; */
-  /* hides the excess portions of the decorative elements so there isn't a 
-  horizontal scrollbar, plus make sure margin is 0 so displays to the edge */
+}
+
+.body-home-page {
+  background-color: #FAFAFA;
+}
+
+.body-sign-up-page {
+  background-color: #FAFAFA;
 }
 
 .max-width-wrapper {
-  background-color: #F2F2F2;
   min-height: 100%; 
   max-width: 1440px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
  } 
 
 figure {
@@ -161,7 +162,7 @@ header {
 /**************************************************/
 /* This code is to allow for footer background color to extend
 up behind this section of code */
-main {
+.main-homepage {
   position: relative;
   z-index: 1;
 }
@@ -293,7 +294,6 @@ main {
   z-index: 0;
   margin-top: -800px;
   background-color: #25293A;
-  /* min-height: 100%; */
   display: flex;
   align-items: center;
   flex-flow: column wrap;
@@ -419,6 +419,7 @@ main {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 /**************************************************/
 /* Sign-up Page - Countdown Section  - Mobile */
 /**************************************************/
@@ -502,6 +503,7 @@ main {
   height: 56px;
   margin-bottom: 100px;
 }
+
 /**************************************************/
 /* Sign-up Page - Contact Section - Mobile */
 /**************************************************/
@@ -618,6 +620,7 @@ up behind this section of code */
   width: 486px;
   height: 486px; 
 }
+
 /**************************************************/
 /**************************************************/
 /* Tablet Syles */
@@ -687,7 +690,76 @@ up behind this section of code */
     text-align: left;
   }
 
-  /** Sign up page-tablet **/
+/**************************************************/
+/* Homepage - Card Section - Tablet */
+/**************************************************/ 
+ .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 689px;
+  height: 316px;
+  text-align: left;
+}
+
+.card-part-1 {
+  text-align: left;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 48px;
+  margin-top: 48px;
+}
+
+.card-part-2 {
+  text-align: left;
+  grid-column: 2;
+  grid-row: 1;
+  margin-left: 48px;
+  margin-top: 92px;
+}
+
+.card-part-3 {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 0;
+  margin-left: 48px;
+  margin-bottom: 48px;
+  margin-top: -10px;
+}
+
+.cost {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.num-users {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.card-pro figure {
+  position: absolute;
+  width: 880px;
+  bottom: 0;
+  left: -325px;
+  top: -280px;
+}
+
+/**************************************************/
+/* Homepage - Countdown-Footer Section - Tablet */
+/**************************************************/
+.countdown-circle-pattern-container {
+  position: absolute;
+  left: -215px;
+  bottom: -390px;
+  width: 1202px;
+}
+
+/**************************************************/
+/* Sign-up Page - Header Section - Tablet */
+/**************************************************/
   #header-circle-sign-up {
     display: none;
   }
@@ -697,7 +769,13 @@ up behind this section of code */
     margin-left: 98px;
     margin-right: 98px;
   }
-  /* Sign up page -Contact form tablet */
+
+  .header-container-content-sign-up p {
+    width: 572px;
+  }
+/**************************************************/
+/* Sign-up Page - Contact Form Section - Tablet */
+/**************************************************/
   .contact-container {
     width: 445px;
   }
@@ -721,73 +799,8 @@ up behind this section of code */
   }
 
 /**************************************************/
-/* Homepage - Card Section - Tablet */
-/**************************************************/ 
- .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 689px;
-    height: 316px;
-    text-align: left;
-  }
-
-  .card-part-1 {
-    text-align: left;
-    grid-column: 1;
-    grid-row: 1;
-    margin-left: 48px;
-    margin-top: 48px;
-    }
-  
-
-  .card-part-2 {
-    text-align: left;
-    grid-column: 2;
-    grid-row: 1;
-    margin-left: 48px;
-    margin-top: 92px;
-  }
-
-  .card-part-3 {
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: 0;
-    margin-left: 48px;
-    margin-bottom: 48px;
-    margin-top: -10px;
-  }
-
-  .cost {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 64px;
-    margin-top: 16px;
-    margin-bottom: 0;
-  }
-
-  .num-users {
-    margin-top: 4px;
-    margin-bottom: 0;
-  }
-
-  .card-pro figure {
-    position: absolute;
-    width: 880px;
-    bottom: 0;
-    left: -325px;
-    top: -280px;
-  }
+/* Sign-up Page - Countdown Section - Tablet */
 /**************************************************/
-/* Homepage - Countdown-Footer Section - Tablet */
-/**************************************************/
-  .countdown-circle-pattern-container {
-    position: absolute;
-    left: -215px;
-    bottom: -390px;
-    width: 1202px;
-  }
-
- /* Countdown Section Sign-up Page */
   .countdown-container-sign-up {
     padding-top: 45px;
   }
@@ -825,7 +838,9 @@ up behind this section of code */
     height: 550px; 
   }
 
-  /* Sign up page footer */
+/**************************************************/
+/* Sign-up page Footer - Tablet */
+/**************************************************/
   .signup-countdown-container {
     margin-top: -245px;
     min-height: 380px;
@@ -841,7 +856,7 @@ up behind this section of code */
 /**************************************************/
 /* Homepage Header Section - Desktop */
 /**************************************************/    
-  .max-width-wrapper {
+  .max-width-wrapper-home-page {
     overflow: visible;
   } 
 
@@ -897,9 +912,7 @@ up behind this section of code */
 /* Homepage Card Section - Desktop */
 /**************************************************/  
   .card-container {
-    /* display: flex; */
     justify-content: space-between;
-    /* align-items: center; */
     flex-flow: row wrap;
     margin-top: 184px;
     margin-left: 165px;
@@ -1008,40 +1021,49 @@ up behind this section of code */
     bottom: -770px;
     width: 2046px;
   }
+
 /**************************************************/
-/* Signup Page Header Section - Desktop */
+/* Sign-up Page - Header Section - Desktop */
 /**************************************************/    
-  .max-width-wrapper {
+.body-sign-up-page {
+  background-color: #ffffff;
+}  
+
+.max-width-wrapper-sign-up {
     display: flex;
     justify-content: center;
     flex-direction: row;
   }
 
-  header {
-    width: 70%;
+  .container-1-desktop-view {
+    width: 1020px;
+    padding-bottom: 150px;
   }
 
   .header-container-content-sign-up {
     margin-top: 154px;
     margin-left: 165px;
     margin-right: 0;
-    text-align: left;
+    width: 540px;
   }
+
   .header-container-content-sign-up h1 {
     font-size: 56px;
     line-height: 64px;
     margin-bottom: 24px;
+    text-align: left;
   }
 
   .header-container-content-sign-up p {
     font-size: 18px;
     line-height: 28px;
+    text-align: left;
   }
 
 /**************************************************/
-/* Signup - Main Section - Desktop */
+/* Sign-up Page - Main Section - Desktop */
 /**************************************************/  
-  main {
+  .main-sign-up {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -1053,8 +1075,17 @@ up behind this section of code */
     margin-top: -240px;
     box-shadow: 2px 20px 20px 5px rgb(78 84 103 / 25%);
   }
+
+  .countdown-container-sign-up {
+    display: block;
+    padding-top: 40px;
+  }
+
+  .countdown-container-sign-up h2 {
+    text-align: left;
+  }
 /**************************************************/
-/* Signup - Countdown-Footer Section - Desktop */
+/* Sign-up Page - Countdown-Footer Section - Desktop */
 /**************************************************/  
   .signup-countdown-container {
     width: 30%;
@@ -1068,8 +1099,9 @@ up behind this section of code */
       width: 1440px;
       height: 1440px; 
   }
+/* Footer element on sign-up page */
+  .container-2-desktop-view {
+    width: 420px;
+    padding-bottom: 150px;
+  }
 }
-
-/* Next time start on the sign up page, desktop view.  The side with rings is in place. 
-start with the header and main element placement.
-*/
