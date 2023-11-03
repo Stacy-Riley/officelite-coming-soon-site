@@ -107,7 +107,7 @@ header {
 
 #header-charts {
   width: 171px;
-  height: 192px;
+  /* height: 192px; */
 }
 
 .header-container-content {
@@ -207,7 +207,6 @@ up behind this section of code */
   width: 880px;
   bottom: 7px;
   left: -275px;
-  
 }
 
 .card-part-1 {
@@ -351,14 +350,17 @@ up behind this section of code */
   line-height: 28px;
   text-align: center;
   opacity: 0.5;
+  margin: 0;
 }
 
 .time {
   color: rgba(255, 255, 255, 1);
   font-size: 32px;
+  font-weight: bold;
   line-height: 48px;
   text-align: center;
   margin: 0;
+  padding-top: 11px;
 }
 
 .countdown-button-container {
@@ -473,6 +475,7 @@ up behind this section of code */
   text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
+  opacity: 0.8;
 }
 
 .time-sign-up {
@@ -661,15 +664,16 @@ up behind this section of code */
   }
 
   #header-charts {
-    width: 281px;
-    height: 314px;
-    margin-right: 40px;
+    width: 330px;
+    min-height: 100%;
+    /* margin-right: 40px; */
   }
 
   .order-of-charts {
     order: 2;
     width: 50%;
-    margin-left: 39px;
+    margin-left: 10px;
+    /* margin-top: 20px; */
   }
 
   order-of-content {
@@ -682,18 +686,31 @@ up behind this section of code */
     align-items: start;
     margin-top: 0;
     margin-left: 39px;
-    margin-right: 0;
+    margin-right: 30px;
   }
 
-  .header-container-content h1,
+  .header-container-content h1 {
+    text-align: left;
+    text-shadow: none;
+    width: 339px;
+  }
   .header-container-content p {
     text-align: left;
+    text-shadow: none;
+    width: 345px;
   }
-
+  
+  .header-h1 span {
+    display: block;
+  }
 /**************************************************/
 /* Homepage - Card Section - Tablet */
 /**************************************************/ 
- .card {
+.card-container {
+  margin-top: 140px;
+}
+
+.card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 689px;
@@ -739,6 +756,11 @@ up behind this section of code */
   margin-bottom: 0;
 }
 
+.card-pro {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 .card-pro figure {
   position: absolute;
   width: 880px;
@@ -750,13 +772,50 @@ up behind this section of code */
 /**************************************************/
 /* Homepage - Countdown-Footer Section - Tablet */
 /**************************************************/
+.countdown-section {
+  margin-top: -500px;
+}
+
+.countdown-container {
+  position: relative;
+  padding-top: 600px;
+}
+
 .countdown-circle-pattern-container {
   position: absolute;
   left: -215px;
-  bottom: -390px;
+  bottom: -380px;
   width: 1202px;
 }
 
+.countdown-button-container {
+  margin-bottom: 100px;
+}
+
+.time-container {
+  margin-bottom: 48px;
+  width: 448px;
+}
+
+.time-container div {
+  width: 100px;
+  height: 128px;
+  border-radius: 13px;
+}
+
+.time {
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 48px;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.time-label {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 8px;
+}
 /**************************************************/
 /* Sign-up Page - Header Section - Tablet */
 /**************************************************/
@@ -772,6 +831,10 @@ up behind this section of code */
 
   .header-container-content-sign-up p {
     width: 572px;
+  }
+
+  .header-sign-up-span-2 {
+    display: block;
   }
 /**************************************************/
 /* Sign-up Page - Contact Form Section - Tablet */
@@ -802,7 +865,7 @@ up behind this section of code */
 /* Sign-up Page - Countdown Section - Tablet */
 /**************************************************/
   .countdown-container-sign-up {
-    padding-top: 45px;
+    padding-top: 40px;
   }
 
   .countdown-container-sign-up h2 {
@@ -815,6 +878,7 @@ up behind this section of code */
   }
  
   .time-container-sign-up div {
+    border-radius: 13px;
     width: 100px;
     height: 128px;
   }
@@ -822,8 +886,9 @@ up behind this section of code */
   .time-label-sign-up {
     font-size: 16px;
     margin-bottom: 0;
+    margin-top: 5px;
   }
-
+  
   .time-sign-up {
     font-size: 56px;
     line-height: 48px;
@@ -875,18 +940,20 @@ up behind this section of code */
 
   .header-container-charts {
     position: relative;
+    min-height: 100%;
   }
 
   #header-charts {
     width: 475px;
-    height: 531px;
+    min-height: 100%;
     margin-right: 165px;
   }
 
   .order-of-charts {
     margin-left: 95px;
+    margin-top: -60px;
   }
-
+ 
   #header-circle {
     position: absolute;
     top: -450px;
@@ -899,6 +966,7 @@ up behind this section of code */
     font-size: 56px;
     line-height: 64px;
     text-shadow: none;
+    width: 540px;
   }
   
   .header-container-content p {
@@ -906,15 +974,19 @@ up behind this section of code */
     line-height: 28px;
     margin-bottom: 32px;
     text-shadow: none;
+    width: 530px;
   }
 
+  .header-h1 span {
+    display: inline;
+  }
 /**************************************************/
 /* Homepage Card Section - Desktop */
 /**************************************************/  
   .card-container {
     justify-content: space-between;
     flex-flow: row wrap;
-    margin-top: 184px;
+    margin-top: 154px;
     margin-left: 165px;
     margin-right: 165px;
   }
@@ -994,7 +1066,7 @@ up behind this section of code */
 
   .time {
     font-size: 56px;
-    margin-top: 24px;
+    /* margin-top: 24px; */
   }
 
   .time-container {
@@ -1022,14 +1094,17 @@ up behind this section of code */
     width: 2046px;
   }
 
+  .countdown-button-container {
+    margin-bottom: 0px;
+  }
 /**************************************************/
 /* Sign-up Page - Header Section - Desktop */
 /**************************************************/    
-.body-sign-up-page {
-  background-color: #ffffff;
-}  
+  .body-sign-up-page {
+    background-color: #ffffff;
+  }  
 
-.max-width-wrapper-sign-up {
+  .max-width-wrapper-sign-up {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -1060,6 +1135,13 @@ up behind this section of code */
     text-align: left;
   }
 
+  .header-sign-up-span-2 {
+    display: inline;
+  }
+
+  .header-sign-up-span-1 {
+    display: block;
+  }
 /**************************************************/
 /* Sign-up Page - Main Section - Desktop */
 /**************************************************/  
@@ -1092,12 +1174,12 @@ up behind this section of code */
   }
 
   .countdown-circle-pattern-container-sign-up {
-      position: absolute;
-      left: -550px;
-      bottom: 0;
-      top: -250px;
-      width: 1440px;
-      height: 1440px; 
+    position: absolute;
+    left: -550px;
+    bottom: 0;
+    top: -250px;
+    width: 1440px;
+    height: 1440px; 
   }
 /* Footer element on sign-up page */
   .container-2-desktop-view {
