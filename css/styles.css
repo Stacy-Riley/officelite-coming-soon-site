@@ -107,7 +107,6 @@ header {
 
 #header-charts {
   width: 171px;
-  /* height: 192px; */
 }
 
 .header-container-content {
@@ -116,9 +115,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  margin-top: 64px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 38px 24px 10px 24px;
   text-align: center;
 }
 
@@ -172,7 +169,7 @@ up behind this section of code */
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .card {
@@ -550,6 +547,7 @@ up behind this section of code */
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 24px;
+  margin-left: 1px;
 }
 
 .contact-form input::placeholder {
@@ -580,6 +578,7 @@ up behind this section of code */
   padding-top: 10px;
   padding-left: 9px;
   padding-right: 29px;
+  margin-left: 1px;
 }
 
 /* first option - "free" wording */
@@ -666,14 +665,12 @@ up behind this section of code */
   #header-charts {
     width: 330px;
     min-height: 100%;
-    /* margin-right: 40px; */
   }
 
   .order-of-charts {
     order: 2;
     width: 50%;
     margin-left: 10px;
-    /* margin-top: 20px; */
   }
 
   order-of-content {
@@ -707,7 +704,7 @@ up behind this section of code */
 /* Homepage - Card Section - Tablet */
 /**************************************************/ 
 .card-container {
-  margin-top: 140px;
+  margin-top: 120px;
 }
 
 .card {
@@ -778,14 +775,14 @@ up behind this section of code */
 
 .countdown-container {
   position: relative;
-  padding-top: 600px;
+  padding-top: 640px;
 }
 
 .countdown-circle-pattern-container {
   position: absolute;
-  left: -215px;
-  bottom: -380px;
-  width: 1202px;
+  left: -320px;
+  bottom: -490px;
+  width: 1454px;
 }
 
 .countdown-button-container {
@@ -897,10 +894,9 @@ up behind this section of code */
 
   .countdown-circle-pattern-container-sign-up {
     position: absolute;
-    left: 120px;
-    bottom: -65px;
-    width: 550px;
-    height: 550px; 
+    left: -350px;
+    bottom: 430px;
+    width: 1470px; 
   }
 
 /**************************************************/
@@ -986,7 +982,7 @@ up behind this section of code */
   .card-container {
     justify-content: space-between;
     flex-flow: row wrap;
-    margin-top: 154px;
+    margin-top: 144px;
     margin-left: 165px;
     margin-right: 165px;
   }
@@ -1052,7 +1048,7 @@ up behind this section of code */
     margin-left: 165px;
     margin-right: 165px;
     margin-top: 42px;
-    margin-bottom: 91px;
+    margin-bottom: 61px;
   }
 
   .countdown-container,
@@ -1066,7 +1062,6 @@ up behind this section of code */
 
   .time {
     font-size: 56px;
-    /* margin-top: 24px; */
   }
 
   .time-container {
@@ -1089,8 +1084,8 @@ up behind this section of code */
 
   .countdown-circle-pattern-container {
     position: absolute;
-    left: -700px;
-    bottom: -770px;
+    left: -705px;
+    bottom: -800px;
     width: 2046px;
   }
 
@@ -1175,12 +1170,12 @@ up behind this section of code */
 
   .countdown-circle-pattern-container-sign-up {
     position: absolute;
-    left: -550px;
+    left: -700px;
     bottom: 0;
-    top: -250px;
-    width: 1440px;
-    height: 1440px; 
+    top: -480px;
+    width: 1900px;
   }
+
 /* Footer element on sign-up page */
   .container-2-desktop-view {
     width: 420px;
