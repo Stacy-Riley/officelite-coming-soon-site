@@ -31,12 +31,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-home-mobile.jpg)
-![](./screenshot-home-tablet.jpg)
-![](./screenshot-home-desktop.jpg)
-![](./screenshot-signup-mobile.jpg)
-![](./screenshot-signup-tablet.jpg)
-![](./screenshot-signup-desktop.jpg)
+![](./images/screenshot-home-mobile.jpg)
+![](./images/screenshot-home-tablet.jpg)
+![](./images/screenshot-home-desktop.jpg)
+![](./images/screenshot-signup-mobile.jpg)
+![](./images/screenshot-signup-tablet.jpg)
+![](./images/screenshot-signup-desktop.jpg)
 
 ### Links
 
