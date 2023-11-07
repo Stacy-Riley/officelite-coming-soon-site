@@ -1065,8 +1065,8 @@ up behind this section of code */
     width: 1110px;
     margin-left: 165px;
     margin-right: 165px;
-    margin-top: 42px;
-    margin-bottom: 51px;
+    margin-top: 38px;
+    margin-bottom: 40px;
   }
 
   .countdown-container,
@@ -1108,7 +1108,7 @@ up behind this section of code */
   }
 
   .countdown-button-container {
-    margin-bottom: 0px;
+    margin-bottom: 25px;
   }
 /**************************************************/
 /* Sign-up Page - Header Section - Desktop */
