@@ -1000,7 +1000,7 @@ up behind this section of code */
   .card-container {
     justify-content: space-between;
     flex-flow: row wrap;
-    margin-top: 144px;
+    margin-top: 130px;
     margin-left: 165px;
     margin-right: 165px;
   }
@@ -1066,7 +1066,7 @@ up behind this section of code */
     margin-left: 165px;
     margin-right: 165px;
     margin-top: 42px;
-    margin-bottom: 61px;
+    margin-bottom: 51px;
   }
 
   .countdown-container,
