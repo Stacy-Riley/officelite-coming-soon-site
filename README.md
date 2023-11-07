@@ -31,12 +31,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot-home-mobile.jpg)
-![](./images/screenshot-home-tablet.jpg)
-![](./images/screenshot-home-desktop.jpg)
-![](./images/screenshot-signup-mobile.jpg)
-![](./images/screenshot-signup-tablet.jpg)
-![](./images/screenshot-signup-desktop.jpg)
+![](./images/screenshot-home-mobile.png)
+![](./images/screenshot-home-tablet.png)
+![](./images/screenshot-home-desktop.png)
+![](./images/screenshot-signup-mobile.png)
+![](./images/screenshot-signup-tablet.png)
+![](./images/screenshot-signup-desktop.png)
 
 ### Links
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ### Built with
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS
 - Flexbox
 - Mobile-first workflow
 - Vanilla JavaScript
